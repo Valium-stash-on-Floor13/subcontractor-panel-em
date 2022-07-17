@@ -21,27 +21,12 @@ const bcrypt = require('bcryptjs')
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://test:Qd7lc4xhRhQTa9CW@cluster0.jo8w72a.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(DATABASE_URI)
 
 
-// const API_KEY="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";
-// sgMail.setApiKey(API_KEY)
 
-// const message= {
-// 	to :['moondst14@gmail.com', 'darthvader14112@gmail.com'],
-// 	from:{
-// 		name:'E M',
-// 		email:'divyayashsaxena2000@gmail.com',
 
-// },
-// 	subject: "Hello, mate. testing was successful",
-// 	text:'hi',
-// 	html:'<h1>Hello </h1>',
-// }
 
-// sgMail.send(message)
-// .then((response) => console.log('Email sent'))
-// .catch(error=> console.log(error.message));
 
 
 
